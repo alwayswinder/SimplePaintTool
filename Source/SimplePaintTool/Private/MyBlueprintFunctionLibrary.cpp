@@ -31,7 +31,7 @@ bool UMyBlueprintFunctionLibrary::WriteRTtoTexture(UTexture2D* InTex, UTextureRe
 
 						FColor PixelColor = OldColor[curPixelIndex];
 						FColor FillColor = InColor.ToFColor(false);
-						
+
 						Pixels[4 * curPixelIndex] = PixelColor.B + lerpA *(FillColor.B - PixelColor.B);
 						Pixels[4 * curPixelIndex + 1] = PixelColor.G + lerpA *(FillColor.G - PixelColor.G);
 						Pixels[4 * curPixelIndex + 2] = PixelColor.R + lerpA *(FillColor.R - PixelColor.R);
